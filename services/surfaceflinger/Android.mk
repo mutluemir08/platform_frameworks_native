@@ -164,9 +164,6 @@ ifeq ($(TARGET_USES_QCOM_BSP), true)
     ExSurfaceFlinger/ExSurfaceFlinger.cpp \
     ExSurfaceFlinger/ExVirtualDisplaySurface.cpp \
     ExSurfaceFlinger/ExHWComposer.cpp
-  ifeq ($(call is-board-platform-in-list, msm8996), true)
-    LOCAL_CFLAGS += -DUSE_COLOR_METADATA
-  endif
 endif
 
 LOCAL_MODULE := libsurfaceflinger
